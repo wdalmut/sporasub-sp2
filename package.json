@@ -1,14 +1,29 @@
 {
   "name": "sporasub-sp2",
   "version": "1.0.0",
-  "description": "",
+  "description": "A set of streams that read `.dive` files from Sporasub SP2 diving watch",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Walter Dal Mut <walter.dalmut@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "jasmine": "^2.8.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdalmut/sporasub-sp2.git"
+  },
+  "keywords": [
+    "sporasub",
+    "sp2",
+    "dive",
+    "diving"
+  ],
+  "bugs": {
+    "url": "https://github.com/wdalmut/sporasub-sp2/issues"
+  },
+  "homepage": "https://github.com/wdalmut/sporasub-sp2#readme"
 }
