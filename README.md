@@ -3,11 +3,14 @@
 A set of streams that read `.dive` files from Sporasub SP2 diving watch
 
 ```js
-const sp2 = require('sp2');
+const page = require('sp2/page');
+const json = require('sp2/to-json');
 
 fs.createReadStream('my.dive')
-    .pipe(sp2.page())
-    .on('data', (chunk) => {
+    .pipe(page())
+    .pipe(json())
+    .on('data', (dive) => {
+        console.log(dive); // object
     });
 ;
 
